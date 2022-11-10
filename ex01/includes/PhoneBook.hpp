@@ -6,7 +6,7 @@
 /*   By: kyamagis <kyamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:35:39 by kyamagis          #+#    #+#             */
-/*   Updated: 2022/11/09 21:59:44 by kyamagis         ###   ########.fr       */
+/*   Updated: 2022/11/10 12:12:05 by kyamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 #include <iostream>
 #include "Contact.hpp"
 
+#define FIRST 0
+#define LAST 1
+#define NICK 2
+#define PHONE 3
+#define SECRET 4
+
 class	PhoneBook
 {
 	private:
@@ -26,19 +32,17 @@ class	PhoneBook
 	
 	public :
 		PhoneBook();
-		void		set_first_name(std::string first, int idx);
-		void		set_last_name(std::string last, int idx);
-		void		set_nickname(std::string nick, int idx);
-		void		set_phone_number(std::string phone, int idx);
-		void		set_darkest_secret(std::string secret, int idx);
-		int			get_index(int idx);
-		std::string	get_first_name(int idx);
-		std::string	get_last_name(int idx);
-		std::string	get_nickname(int idx);
 
 		void		set_contact_idx(int idx);
-		int			get_contact_idx(int idx);
+		int			get_contact_idx();
 		Contact		get_contact(int idx);
+
+		void		add();
+		void		set_data_member(std::string	str, int idx, int member_num);
+
+		void		search();
+		void		put_idx_contact_member(int idx);
+		void		search_index_contact_member();
 
 };
 

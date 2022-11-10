@@ -6,7 +6,7 @@
 /*   By: kyamagis <kyamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:28:08 by kyamagis          #+#    #+#             */
-/*   Updated: 2022/11/09 21:30:30 by kyamagis         ###   ########.fr       */
+/*   Updated: 2022/11/10 12:15:35 by kyamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,14 @@ std::string	Contact::get_last_name()
 std::string	Contact::get_nickname()
 {
 	return (nickname);
+}
+
+std::string	Contact::get_phone_number()
+{
+	return (phone_number);
+}
+
+std::string	Contact::get_darkest_secret()
+{
+	return (darkest_secret);
 }

@@ -6,7 +6,7 @@
 /*   By: kyamagis <kyamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 12:08:41 by kyamagis          #+#    #+#             */
-/*   Updated: 2022/11/09 20:50:18 by kyamagis         ###   ########.fr       */
+/*   Updated: 2022/11/10 12:14:40 by kyamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ class	Contact
 		std::string	get_first_name();
 		std::string	get_last_name();
 		std::string	get_nickname();
+		std::string	get_phone_number();
+		std::string	get_darkest_secret();
 };
 
 #endif

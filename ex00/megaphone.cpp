@@ -6,7 +6,7 @@
 /*   By: kyamagis <kyamagis@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:26:12 by kyamagis          #+#    #+#             */
-/*   Updated: 2022/11/08 11:58:15 by kyamagis         ###   ########.fr       */
+/*   Updated: 2022/11/10 13:02:27 by kyamagis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static  int	put_error(void)
 static	void	put_toupper_chr(char *str)
 {
 	for (size_t i = 0; str[i]; i++)
-		std::cout << toupper(str[i]);
+		std::cout << (char)toupper(str[i]);
 }
 
 int	main(int argc, char **argv)
