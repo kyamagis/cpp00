@@ -40,7 +40,7 @@ void	PhoneBook::set_data_member(std::string	str, int idx, int member_num)
 
 	std::cout << str; std::cin >> input_str;
 	if (std::cin.eof())
-		exit(EXIT_FAILURE);
+		std::exit(EXIT_FAILURE);
 	if (member_num == FIRST)
 		contact[idx].set_first_name(input_str);
 	else if (member_num == LAST)
@@ -93,7 +93,7 @@ void	PhoneBook::search_index_contact_member(void)
 	std::cout << "\n";
 	std::cout << "Search index: " ; std::cin >> input_str;
 	if (std::cin.eof())
-		exit(EXIT_FAILURE);
+		std::exit(EXIT_FAILURE);
 	if (input_str == "0")
 		put_idx_contact_member(0);
 	else if (input_str == "1")

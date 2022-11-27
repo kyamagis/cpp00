@@ -16,6 +16,7 @@
 #include <string>
 #include <iomanip>
 #include <iostream>
+#include <cstdlib>
 #include "Contact.hpp"
 
 #define FIRST 0
